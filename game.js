@@ -1,10 +1,11 @@
 const $submitButton = document.getElementById("submit");
+//console.log($submitButton);
 const $message = document.getElementById("message");
 const $lives = document.getElementById("lives");
 var guessNumber = Math.round(Math.random() * 100);
 var lives = 10;
 var message;
-$submitButton.onClick = () => {
+$submitButton.onclick = () => {
     let userinput = document.getElementById("number-input").value;
     lives--;
     if (userinput == guessNumber) {

@@ -1,4 +1,6 @@
 const $startbutton = document.getElementById("start");
-$startbutton.onClick = () => {
+
+$startbutton.onclick = () => {
+    console.log("test");
     location.href = "./game.html";
 }
